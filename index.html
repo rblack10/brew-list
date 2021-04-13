@@ -19,6 +19,23 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="./css/settings.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript">
+      window.MemberfulOptions = { site: "https://mybrewlist.memberful.com" };
+
+      (function () {
+        var s = document.createElement('script');
+
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://d35xxde4fgg0cx.cloudfront.net/assets/embedded.js';
+
+        setup = function () { window.MemberfulEmbedded.setup(); }
+
+        s.addEventListener("load", setup, false);
+
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+      })();
+    </script>
   </head>
 
   <body>
@@ -44,7 +61,8 @@
                   <li class="menu-item"><a href="https://mybrewlist-admin.glideapp.io/">Sign in</a></li>
                 </ul>
                 <div class="header-btns justify-content-end">
-                  <a href="https://mybrewlist-admin.glideapp.io/" class="btn btn--primary btn--medium">Sign Up</a>
+                  <a href="https://mybrewlist.memberful.com/checkout?plan=63335"
+                    class="btn btn--primary btn--medium">Sign Up</a>
                 </div>
               </div>
 
@@ -112,10 +130,10 @@
             <div class="col-md-8 col-lg-7 col-xl-6  pb-lg--90 pb-xl--0 order-2 order-md-1">
               <div class="hero-content">
                 <h1 class="title mb--30 pr-5">
-                  Manage your taplist quickly and easily
+                  Manage your tap list quickly and easily
                 </h1>
                 <p>
-                  Create taplists and custom QR codes for all of your taprooms.
+                  Create tap lists and custom QR codes for all of your taprooms.
                 </p>
               </div>
 
@@ -124,20 +142,20 @@
                     class="p2"></span></a> -->
                 <a href="https://mybrewlist-admin.glideapp.io/" class="apple btn btn--primary btn--large">
                   <!-- <i class="fab fa-apple"></i> -->
-                  <span class="p2">Try now</span>
+                  <span class="p2">Try Free</span>
                 </a>
               </div>
 
-              <div class=" mt--15">
-                <!-- <ul class="rating-stars">
+              <div class="hero-ratings mt--15">
+                <ul class="rating-stars ">
                   <li><i class="fas fa-star"></i></li>
                   <li><i class="fas fa-star"></i></li>
                   <li><i class="fas fa-star"></i></li>
                   <li><i class="fas fa-star"></i></li>
                   <li><i class="fas fa-star"></i></li>
-                </ul> -->
-                <!-- <span class="trust-info">Trusted by breweries and beer drinkers</span> -->
-                <span class="trust-info">No credit card required</span>
+                </ul>
+                <span class="trust-info">Trusted by breweries and beer drinkers</span>
+                <!-- <span class="trust-info">No credit card required</span> -->
               </div>
             </div>
 
@@ -178,7 +196,7 @@
                 <div class="content">
                   <h6 class="title">Transparent Pricing</h6>
                   <p>
-                    No need to talk to a sales rep, you can sign up and begin managing your taplist in minutes.
+                    No need to talk to a sales rep, you can sign up and begin managing your tap list in minutes.
                   </p>
                 </div>
               </div>
@@ -193,7 +211,7 @@
                 <div class="content">
                   <h6 class="title">Intuitive interface</h6>
                   <p>
-                    Lightning fast taplist management. Mark beers as sold out with the tap of a button and keep
+                    Lightning fast tap list management. Mark beers as sold out with the tap of a button and keep
                     customers up to date.
                   </p>
                 </div>
@@ -242,7 +260,7 @@
                   data-aos-once="true">
                   <h2 class="title h2">Built for breweries.</h2>
                   <p>
-                    Our admin interface allows you to quickly update your taplists, manage your brewery and taproom
+                    Our admin interface allows you to quickly update your tap lists, manage your brewery and taproom
                     info, and print QR codes for paperless, updated menu's.
                   </p>
                 </div>
@@ -314,7 +332,7 @@
               <p>
                 Manage multiple breweries and taprooms from a central location. <br class="d-none d-lg-block"> With an
                 intuitive interface, you can
-                easily build a taplist and engage with your customers.
+                easily build a tap list and engage with your customers.
               </p>
             </div>
           </div>
@@ -361,7 +379,7 @@
               <div class="section-title mb--40 mb-xl--60">
                 <h2 class="testimonial-title h2">What people say about us</h2>
                 <p>
-                  <!-- Create custom taplists and QR codes. -->
+                  <!-- Create custom tap lists and QR codes. -->
                   <!-- <br class="d-none d-lg-block"> -->
                 </p>
               </div>
@@ -378,7 +396,7 @@
                   <p>
                     “Amazing experience I love it a lot. Thanks to Brew List
                     dreams come true! I really super appreciate their
-                    approach on taplist management."
+                    approach on tap list management."
                   </p>
                   <span class="name">Justin P.</span> <br />
                   <span class="job">Brewery Owner</span>
@@ -394,7 +412,7 @@
 
                 <div class="content">
                   <p>
-                    “It's dead simple to manage our taplist and the customers find it super easy to use also.”
+                    “It's dead simple to manage our tap list and the customers find it super easy to use also.”
                   </p>
                   <span class="name">Ryan Musk</span> <br />
                   <span class="job">Head Brewer</span>
@@ -414,15 +432,15 @@
               <i class="fas fa-beer"></i>
             </div>
 
-            <h2 class="cta-title h2">Try it now</h2>
+            <h2 class="cta-title h2">Start managing your tap list</h2>
             <div class="cta-btns mb--30">
-              <a href="#" class=" btn btn--primary btn--large"><span class="p2">Customer App</span></a>
-              <a href="https://mybrewlist-admin.glideapp.io/" class=" btn btn--primary btn--large"><span
-                  class="p2">Admin App</span></a>
+              <!-- <a href="#" class=" btn btn--primary btn--large"><span class="p2">Customer App</span></a> -->
+              <a href="https://mybrewlist-admin.glideapp.io/" class=" btn btn--primary btn--large"><span class="p2">Try
+                  Free</span></a>
             </div>
-            <p>
+            <!-- <p>
               No credit card required.
-            </p>
+            </p> -->
           </div>
         </div>
         <div class="cta-shape" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
@@ -443,7 +461,7 @@
             <div class="col-lg-5 col-xl-4 col-sm-8 col-11 col-md-6">
               <div class="footer-content">
                 <p class="p1">
-                  Create taplists and custom QR codes for all of your taprooms.
+                  Create tap lists and custom QR codes for all of your taprooms.
                 </p>
               </div>
             </div>
@@ -508,53 +526,6 @@
     <script src="./plugins/fancybox-master/jquery.fancybox.min.js"></script>
     <script src="./plugins/aos-animation/aos.js"></script>
 
-    <!-- Load Stripe.js on your website. -->
-    <script src="https://js.stripe.com/v3"></script>
-
-    <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-    <button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-      id="checkout-button-price_1IdSctLZ5O2fh5hgBqXdlS1K" role="link" type="button">
-      Checkout
-    </button>
-
-    <div id="error-message"></div>
-
-    <script>
-      (function () {
-        var stripe = Stripe('pk_test_51IRQsDLZ5O2fh5hgYhGaS0j7R8wp7ZkScgGDziUNdFpaTRDzIGU9My7ojaBsBSSK0IV9oTWqtTboh3L8FwdB9A2D00mFxplrut');
-
-        var checkoutButton = document.getElementById('checkout-button-price_1IdSctLZ5O2fh5hgBqXdlS1K');
-        checkoutButton.addEventListener('click', function () {
-          /*
-           * When the customer clicks on the button, redirect
-           * them to Checkout.
-           */
-          stripe.redirectToCheckout({
-            lineItems: [{ price: 'price_1IdSctLZ5O2fh5hgBqXdlS1K', quantity: 1 }],
-            mode: 'subscription',
-            /*
-             * Do not rely on the redirect to the successUrl for fulfilling
-             * purchases, customers may not always reach the success_url after
-             * a successful payment.
-             * Instead use one of the strategies described in
-             * https://stripe.com/docs/payments/checkout/fulfill-orders
-             */
-            successUrl: 'https://mybrewlist.com/success',
-            cancelUrl: 'https://mybrewlist.com/canceled',
-          })
-            .then(function (result) {
-              if (result.error) {
-                /*
-                 * If `redirectToCheckout` fails due to a browser or network
-                 * error, display the localized error message to your customer.
-                 */
-                var displayError = document.getElementById('error-message');
-                displayError.textContent = result.error.message;
-              }
-            });
-        });
-      })();
-    </script>
 
     <!-- Custom JS -->
     <script src="./js/active.js"></script>
